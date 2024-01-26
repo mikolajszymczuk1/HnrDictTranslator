@@ -16,6 +16,16 @@
   "activationEvents": [],
   "main": "./dist/extension.js",
   "contributes": {
+    "configuration": {
+      "type": "object",
+      "title": "HnrDictTranslator",
+      "properties": {
+          "hnrdicttranslator.deeplApiKey": {
+              "type": "string",
+              "default": ""
+          }
+      }
+    },
     "commands": [
       {
         "command": "hnrdicttranslator.hnrtranslate",
