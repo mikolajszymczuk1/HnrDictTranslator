@@ -23,6 +23,27 @@
           "hnrdicttranslator.deeplApiKey": {
               "type": "string",
               "default": ""
+          },
+          "hnrdicttranslator.sourceLanguage": {
+            "type": "string",
+            "enum": [
+              "pl",
+              "en-GB",
+              "de"
+            ],
+            "default": "pl"
+          },
+          "hnrdicttranslator.enabledLanguages": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "en-GB",
+                "de",
+                "pl"
+              ]
+            },
+            "default": ["en-GB", "de", "pl"]
           }
       }
     },
